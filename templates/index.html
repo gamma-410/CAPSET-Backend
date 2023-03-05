@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPSET API Document</title>    
+    <link" href="{{ url_for('static', filename='normalize.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='skeleton.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <h3>CAPSET API Document</h3>
+        <hr>
+        <h5># APIについて</h5>
+        <p>CAPSET の内部APIです。</p>
+        <p>APIの内容は予告なく変更されます。ご了承ください。</p>
+        <hr>
+        <h5># APIの仕様</h5>
+        <h4>/all</h4>
+        <p>GET: 全ての投稿を返します。</p>
+        <h4>/all/:id</h4>
+        <p>GET: idで絞り込んだ特定の投稿を返します。</p>
+        <h4>/post</h4>
+        <p>POST: 投稿を作成します。</p>
+        <h5>クエリ</h5>
+        <ul>
+            <li>username</li>
+            <li>email</li>
+            <li>title</li>
+            <li>detail</li>
+        </ul>
+        <p>username: ユーザーの名前</p>
+        <p>email: ユーザーのメールアドレス</p>
+        <p>title: ライブ配信のタイトル</p>
+        <p>detail: ライブ配信の詳細情報</p>
+        <h4>/delete/:streamingkey</h4>
+        <p>GET/POST: streamingkeyを指定して投稿を削除します。</p>
+        <hr>
+        <p>(c) Copyright 2023 gamma-410.</p>
+    </div>
+</body>
+
+</html>
